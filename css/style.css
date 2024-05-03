@@ -1,0 +1,149 @@
+/* body{
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5),rgba(0,0,0,1));
+    height: 100 vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:rgb(0, 0, 0);
+} */
+
+/* header */
+.header {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/latest_header_image.jpg');  
+     /* when you minimize the height(or zoom in the page) this height is taken as 70% of view port so the content may move out of the header so it is neccessary to keep min height to avoid this  */
+     /* When you remove height: 70vh;, the header's height is no longer fixed, and it becomes dependent on the height of its content. If the content inside the header is relatively small, the header will shrink to fit that content, which can make it appear as if the content is at the top because the header's height is reduced. */
+    height: 85vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: top center;    
+    background-attachment: fixed;
+    min-height:400px; 
+    color: #fff;
+}
+
+@media (max-width: 500px) {
+    .header {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/latest_header_image.jpg');          
+      background-size: cover; /* Use contain to fit the image within the element */
+      background-position: 70% 0%; /* Center the image horizontally and vertically */
+      position: relative;
+      background-attachment: fixed;
+      min-height:400px; 
+      color: #fff;
+      background-repeat: no-repeat;
+      height: 70vh;
+      width: 100%;
+    }
+  }
+
+.header .container {
+    position:relative;
+    height:100%;    
+} 
+
+ .container {
+    margin-left: auto;
+    margin-right:auto;
+} 
+ .container .header-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left:-1000px;
+    transform: translateY(-50%); /*move the content 50% from its current position*/
+    animation: moveIn 2s ease-in-out forwards; 
+}
+
+
+@keyframes moveIn {
+    to {
+        left:auto;; 
+    }
+}
+ 
+
+#navbar {
+    box-sizing: border-box;
+}
+
+/* nav bar styling */
+.navbar ul li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+ul {
+    display:flex;
+    padding-left: 0px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+}  
+
+/* to make the brand image fit iside the navbar*/
+ #nav-pic {
+    max-height: 50px;
+    min-width : 50px;
+    transform:scale(3,3);
+    /* margin-top: 5px;  */
+    
+} 
+/* to make the brand image go invisible on navabar reaching top of the window */
+.brand-title-subtitle {
+    display: none;
+  }
+
+  .brand-img {
+    border-radius: 50%;
+  }
+/* @media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+} */
+
+/* set margin to move the about content down to avoid hiding by navbar */
+
+/* 
+#about {
+    box-sizing: border-box;
+}
+
+.navbar {
+    box-sizing: border-box;
+} */
+
+
+#skill {
+    box-sizing: border-box;
+}
+
+
+/* logo */
+/* .skilllogo {
+    border: 2px solid red;
+    height: 100px;
+    width:160px;
+} */
+.skilllogo {
+    /* border: 2px solid red; */
+    height: 100px;
+    width: 120px;
+}
+
+.imglogo {
+    height: 50px;
+    width: 50px;
+    /* object-fit: contain; optional, adjusts how the image fits into the box */
+    opacity: 0; /* Start with zero opacity */
+    animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Move to full opacity */
+    }
+}

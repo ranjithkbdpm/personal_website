@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+
+    <!-- cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+    <!-- bootstrap file for css
+    <link href="file:///C:/Users/RanjithKumar/OneDrive/Desktop/RANJI/website%20design/personal_site/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    -->
+    <!-- bootstrap file for js -->
+    <!--
+    <script rel="text/Javascript" src="file:///C:/Users/RanjithKumar/OneDrive/Desktop/RANJI/website%20design/personal_site/bootstrap/js/bootstrap.min.js"></script> 
+      -->
+    
+
+    <!-- Typewriter library to simulate text  -->
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.18.0/dist/core.js"></script>
+
+    <link href="./css/style.css" rel="stylesheet"> 
+    <style>
+        .d {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!--Header-->
+        <div class="header" id="home">
+            <div class="container">
+                <div class="header-date pt-3">
+                    <span id="dt"></span>
+                    <span id="time"></span>
+                </div>
+                <div class = "header-content">
+                    <h3 class="mb-5" id="dt"></h3>
+                    <h3 class="mb-3" id="time"></h3>
+                    <h3 class="mb-3">Hello, there! I am</h3>
+                    <h1 class="mb-3 display-5">Ranjithkumar karunakaran</h2>
+                    <h5 class="mb-3">full stack developer</h4>
+                    <!-- <button class="btn btn-danger rounded-pill">hire me!</button> -->
+                </div>            
+            </div>
+        </div>
+
+    <!--navigation-->
+    <div class="navbar navbar-expand-sm bg-light navbar-light shadow sticky-top container-fluid justify-content-around align-items-center"  id="navBar">            
+        <div class="ms-5 mt-2">
+            <a class="navbar-brand"  href="#">
+                <!-- <img src="./img/navpic.jpeg" id="nav-pic" alt="" class="brand-img img-fluid rounded-3 shadow border border-4 border-light "> -->
+                <img src="./img/profilepic.jpeg" id="nav-pic" alt="" class="brand-img img-fluid  shadow border border-3 border-light ">
+                <div class="brand-title-subtitle text-center" href="#">
+                    <p class="brand-title m-0"><b>Ranjithkumar Karunakaran</b></p>
+                    <small class="brand-subtitle m-0 fw-bold" id="brandSubtitle"></small>
+                </div>
+            </a>
+        </div>             
+        <div> 
+            <div>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target = "#navbarCollapsed"><span class="navbar-toggler-icon"></span></button>
+            </div>                   
+            <div class="collapse navbar-collapse" id="navbarCollapsed">              
+                <ul class="navbar-nav ms-5" >
+                    <!-- <li class="nav-item"> 
+                    <img src="./img/navpic.jpeg" id="nav-pic" alt="" class="brand-img img-fluid border-2 border-dark ">
+                    <div class="brand-title-subtitle" href="#">
+                        <h5 class="brand-title">Ranjithkumar Karunakaran</h5>
+                        <p class="brand-subtitle">Web Designer | Developer</p>
+                    </div>
+                    </li>                   -->
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#edex">Edu | Exp</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact me</a></li>
+                </ul>
+            </div> 
+        </div>                  
+    </div>    
+
+    <!--Home Page section-->
+    <!-- <section class="container-fluid mt-5" id="home">
+    </section> -->
+
+    <!--About Page section-->
+    <section class="container-fluid overflow-auto" id="about" style="min-height:100vh">
+        <div class="row h-100" style="min-height:100vh">
+            <div class="col-lg-7 col-md-6 d-flex justify-content-center p-5 align-items-center aboutContent">
+                <div class="p-5">
+                    <h3 class="mb-2">Greetings! </h3>
+                    <div class="d-flex align-items-end mb-4">
+                        <h5 class="me-2">I am a</h5>
+                        <h3 id="autoWrite"></h3>
+                    </div>                    
+                    <p class="mb-1">
+                        I am a dedicated full-stack developer with a profound passion for web development and programming. As an Ardent tech enthusiast, I am committed to continual self-improvement through independent learning. My self-motivation, focus, and proficiency make me an excellent team player. 
+                    </p>
+                    <p class="mb-5">
+                        I am a logical thinker and diligent worker, possessing highly desirable skills in web development, including expertise in React, Angular, and Express frameworks. Additionally, I am proficient in coding languages such as TypeScript, JavaScript, Java, and Python
+                    </p>
+                    
+                    <a href="#contact" class="btn btn-primary">Please! Feel free to contact me!</a>
+                </div>                
+            </div>
+            <div class="col-lg-5 col-sm-6 overflow-hidden d-flex align-items-center">
+                <div class=" bg-dark text-light rounded-3 overflow-hidden"  id="skill" style="min-height:80%;width: 90%; margin-top:110px"
+                >
+                   <h1 class="text-center pt-4 mb-5" style="height:10%">My Skills</h1> 
+                   <div class="mt-4 p-4 d-flex flex-wrap justify-content-around" style="height:80%">
+                    <!-- html css git github -->
+                     <!-- <div class="d-flex flex-wrap justify-content-between"> -->
+                        <div class="skilllogo d-flex flex-column justify-content-center align-items-center">
+                            <img class="img-fluid imglogo"  src="./img/logo/htmllogo.png" alt="htmllogo">
+                            <small>HTML5</small>
+                        </div>
+                        <div class="skilllogo d-flex flex-column justify-content-center align-items-center">
+                            <img class="img-fluid imglogo" src="./img/logo/csslogo.png" alt="csslogo">
+                            <small>CSS</small>
+                        </div >
+                        <div class="skilllogo d-flex flex-column justify-content-center align-items-center">
+                            <img class="img-fluid imglogo"  src="./img/logo/gitlogo.png" alt="gitlogo">
+                            <small>Git</small>
+                        </div>
+                        <div class="skilllogo d-flex flex-column justify-content-center align-items-center">
+                            <img class="img-fluid imglogo"  src="./img/logo/githublogo.png" alt="githublogo">
+                            <small>GitHub</small>
+                        </div>
+                     <!-- </div> -->
+                    <!-- frameworks -->
+                     <!-- <div class="d-flex flex-wrap justify-content-around"> -->
+                        <div class="skilllogo d-flex flex-column justify-content-center align-items-center">
+                            <img class="img-fluid imglogo"  src="./img/logo/reactjslogo.png" alt="reactlogo">
+                            <small>React</small>
+                        </div>
+                        <div class="skilllogo d-flex flex-column justify-content-center align-items-center">
+                            <img class="img-fluid imglogo"  src="./img/logo/angularlogo.png" alt="angularlogo">
+                            <small>Angular</small>
+                        </div>
+                        <div class="skilllogo d-flex flex-column justify-content-center align-items-center">
+                            <img class="img-fluid imglogo"  src="./img/logo/expressLogo.png" alt="expresslogo">
+                            <small>Express</small>
+                        </div>
+                        <div class="skilllogo d-flex flex-column justify-content-center align-items-center">
+                            <img class="img-fluid imglogo"  src="./img/logo/nodejslogo.png" alt="nodejs">
+                            <small>Node JS</small>
+                        </div>
+                     <!-- </div> -->
+                    <!-- languages -->
+                     <!-- <div class="d-flex flex-wrap justify-content-around"> -->
+                        <div class="skilllogo d-flex flex-column justify-content-center align-items-center">
+                            <img class="img-fluid imglogo"  src="./img/logo/jslogo.png" alt="jslogo">
+                            <small>JavaScript</small>
+                        </div>
+                        
+                        <div class="skilllogo d-flex flex-column justify-content-center align-items-center">
+                            <img class="img-fluid imglogo"  src="./img/logo/TypeScriptlogo.png" alt="ts">
+                            <small>TypeScript</small>
+                        </div>
+                        <div class="skilllogo d-flex flex-column justify-content-center align-items-center">
+                            <img class="img-fluid imglogo"  src="./img/logo/Pythonlogo.jpg" alt="py">
+                            <small>Python</small>
+                        </div>
+                        <div class="skilllogo d-flex flex-column justify-content-center align-items-center">
+                            <img  class="img-fluid imglogo"  src="./img/logo/Javalogo.png" alt="java">
+                            <small>Java</small>
+                        </div>
+                     <!-- </div> -->
+                    <!-- database -->
+                     <!-- <div class="d-flex flex-wrap justify-content-around"> -->
+                        <div class="skilllogo d-flex flex-column justify-content-center align-items-center">
+                            <img class="img-fluid imglogo"  src="./img/logo/mongoDBlogo.png" alt="mongoDB">
+                            <small>mongoDB</small>
+                        </div>
+                        <div class="skilllogo d-flex flex-column justify-content-center align-items-center">
+                            <img class="img-fluid imglogo"  src="./img/logo/MySqllogo.png" alt="mysql">
+                            <small>MySql</small>
+                        </div>
+                     <!-- </div>   -->
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Education and experience Page section-->
+    <section class="container-fluid" id="edex" style="min-height:100vh">
+        <div class="row h-100" style="min-height:100vh">
+            <div class="col-md-6 col-sm-6 d-flex justify-content-center p-5 align-items-start">
+                <div class="p-5 mt-5">
+                    <div>
+                        <h1>Education</h1>
+                    </div>
+                    <div class="ms-4">
+                        <ul class="d-flex flex-column">
+                            <li class="mt-1 mb-3">
+                                <h5>MSc in Renewable Energy Systems Technology</h5>
+                                <p>Loughborough University, Loughborough, UK
+                                </p>                                  
+                            </li>
+                            <li>                            
+                                <h5>B. E in Electrical and electronics engineering</h5>
+                                <p>Dr. Mahalingham College of engineering and technology, Pollachi, Tamil Nadu, India</p> 
+                            </li>
+                        </ul>
+                    </div>
+                    <div>  
+                        <h1>Courses</h1>
+                    </div>
+                    <div>
+                        <h5>Full-stack Development</h5>
+                        <p> Besant Technology - Chennai, Tamil Nadu, India</p>
+                    </div> 
+                    <div>
+                        <p>Modules:</p>
+                    </div>
+                    <div class="ms-4">
+                        <ul class="d-flex flex-column">
+                            <li> HTML - Proficient in creating structured and semantic webpage </li>
+                            <li>CSS - Skilled in styling Webpages and implementing responsive design using frameworks like Bootstrap 
+                            </li>
+                            <li> JavaScript - Proficient in client-side scripting, DOM manipulation and Asynchronous Programming using JavaScript 
+                            </li>
+                            <li> Angular -  Completed Angular course, acquiring in depth knowledge of angular fundamentals, component-based architecture, state management and API integration.
+                            </li>
+                        </ul>
+                    </div>                       
+                </div>                 
+            </div>
+            <div class="col-md-6 col-sm-6 d-flex justify-content-center p-5 align-items-start">
+                <div class="p-5 mt-5">
+                    <div>
+                        <h1>Experience</h1>
+                    </div>
+                    <div>
+                        <h5>Internship</h5>
+                        <p>Full - Stack Web development. Besant Technologies, Anna Nagar, Chennai</p>
+                    </div>
+                    <div>
+                        <h5>Operation Engineer</h5>
+                        <p>Solar town Energy Solutions Pvt. Ltd, Chennai, Tamil Nadu, India</p>
+                    </div>
+                    <div class="ms-4">
+                        <ul class="d-flex flex-column">
+                            <li>Established and managed vendors across multiple locations</li>
+                            <li>Optimized logistic processes for streamlined system flow</li>
+                            <li>Optimized project cost & ensuring timely quality execution</li>
+                            <li>Facilitated technical team collaboration, incorporating site feedback into the supply chain</li>
+                            <li>Taking care Liaoning with the government</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Customer Assistant</h5>
+                        <p>Shell Clusters (Shell Ashby), Loughborough, U.K.</p>
+                    </div>
+                    <div class="ms-4">
+                        <ul class="d-flex flex-column">
+                            <li>Keeping track of inventory products and ordering products</li>
+                            <li>Ensure customer complaints are dealt with effectively and take responsibility for the issue</li>
+                            <li>Resolving or escalating problems in a timely manner</li>
+                            <li>Management of compliance issues such as licenses protection, health and safety</li>
+                            <li>Maintenance of site to avoid hazards</li>
+                        </ul>
+                    </div>
+                </div>                
+            </div>                
+        </div>
+    </section>
+
+    </section>
+
+    <!--Blog Page section-->
+    <section class="container-fluid" id="projects" style="min-height:100vh">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cumque laudantium nesciunt corporis in explicabo recusandae, quis voluptatem unde dolorem dolores? Porro, voluptatibus! Quisquam ipsam officiis non. Optio, itaque nisi?</p>
+
+        <div class="container">
+            <h2>Contact Us</h2>
+            
+        </div>
+
+    </section>
+
+    <!--contact Page section-->
+    <section class="container-fluid" id="contact" style="min-height:100vh">
+        <div class="row h-100" style="min-height:100vh">
+            <div class="col-lg-7 col-md-6 d-flex justify-content-center p-5 align-items-center">
+                <div class="p-5 mt-5 w-100">
+                    <form action="submit_form.php" method="post" id="form">
+                        <h1>Get In Touch</h1>
+                        <div class="form-group mt-3 mb-3">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+            
+                        <div class="form-group mb-3">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+            
+                        <div class="form-group mb-5">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        </div>
+            
+                        <button type="submit" class="btn btn-primary mb-3 w-100" id="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-6 d-flex justify-content-center p-5 align-items-center">
+                                
+            </div>                
+        </div>
+
+    </section>
+
+
+    <script src="./js/script.js" rel="text/Javascript"></script>
+
+    
+    
+</body>
+</html>
